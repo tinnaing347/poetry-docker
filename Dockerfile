@@ -13,6 +13,7 @@ ENV PYTHONUNBUFFERED=1 \
 RUN apt-get update \
     && apt-get install --no-install-recommends -y \
         curl \
-        build-essential \ 
+        build-essential \
+        git \ 
     && curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python \
     && pip install -U pip
