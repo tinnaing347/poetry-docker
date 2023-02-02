@@ -5,7 +5,8 @@ ENV PYTHONUNBUFFERED=1 \
     PIP_DISABLE_PIP_VERSION_CHECK=on \
     PIP_DEFAULT_TIMEOUT=100 \
     POETRY_VIRTUALENVS_CREATE=false \
-    POETRY_NO_INTERACTION=1
+    POETRY_NO_INTERACTION=1 \
+    PATH="/root/.local/bin:$PATH"
 
 RUN apt-get update \
     && apt-get install --no-install-recommends -y \
